@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <!-- CSS Theme -->
-<link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-blue.css" />
+<link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-bottle.css" />
 
 </head>
 
@@ -36,34 +36,32 @@
 <!-- Loader / End -->
 
 <!-- Header -->
-<header id="header" class="header-vertical dark">
+<header id="header" class="header-horizontal transparent">
 
-    <!-- Photo -->
-    <a href="index.html" class="photo">
-        <img src="assets/img/photos/developer_avatar.jpg" alt="">
-    </a> 
-
-    <!-- Navigation -->
-    <nav id="main-menu">
-        <ul class="nav nav-vertical">
-            <li><a href="#start"><i class="pe-7s-home"></i><span>Start</span></a></li>
-            <li><a href="#resume"><i class="pe-7s-ribbon"></i><span>Resume</span></a></li>
-            <li><a href="#portfolio"><i class="pe-7s-monitor"></i><span>Portfolio</span></a></li>
-            <li><a href="#clients"><i class="pe-7s-comment"></i><span>Clients</span></a></li>
-            <li><a href="#latest-posts"><i class="pe-7s-copy-file"></i><span>Latest Posts</span></a></li>
-            <li><a href="#contact"><i class="pe-7s-mail"></i><span>Contact</span></a></li>
-        </ul>
-        <span class="selector"></span>
-    </nav>
-
-    <!-- Bottom -->
-    <div class="bottom text-center">
-        <ul class="nav-icons nav-sm">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+    <div class="row">
+        <div class="col-md-2">
+            <!-- Photo -->
+            <a href="index-horizontal-dark.html" class="photo">
+                <img src="assets/img/photos/lawyer_avatar.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-8">
+            <!-- Navigation -->
+            <nav id="main-menu">
+                <ul class="nav nav-horizontal">
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#latest-posts">Latest Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <span class="selector"></span>
+            </nav>
+        </div>
     </div>
+    <!-- Mobile Nav Toggle -->
+    <a href="#" id="horizontal-nav-toggle" class="nav-toggle" data-toggle="mobile-nav"><span><span></span></span></a>
 
 </header>
 <!-- Header / End -->
@@ -75,12 +73,12 @@
     <section id="start" class="section fullheight dark bg-dark">
 
         <!-- BG Image -->
-        <div class="bg-image zooming"><img src="assets/img/photos/developer_bg01.jpg" alt=""></div>
+        <div class="bg-image bg-fixed"><img src="assets/img/photos/lawyer_bg01.jpg" alt=""></div>
         
-        <div class="container container-custom v-center">
+        <div class="container container-custom v-center text-center">
             <a href="#" class="btn-play btn-lg mb-30" data-toggle="video-modal" data-target="#modalVideo" data-video="https://www.youtube.com/embed/uVju5--RqtY"></a>
-            <h1 class="text-lg mb-0"><em>Hi! I’m</em> Mark Kosowski</h1>
-            <p class="lead text-muted">Experienced Front-End Developer</p>
+            <h1 class="text-lg mb-0"><em>Hi! I’m</em> Thomas Kowal</h1>
+            <p class="lead text-muted">Experienced Lawyer</p>
         </div>
 
     </section>
@@ -365,7 +363,7 @@
                 <div class="masonry-sizer col-sm-6 col-xs-12"></div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar01.jpg" alt="">
@@ -378,7 +376,7 @@
                 </div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
                         <footer>
                             <div class="content">
@@ -390,7 +388,7 @@
                 </div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar02.jpg" alt="">
@@ -403,7 +401,7 @@
                 </div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar03.jpg" alt="">
@@ -416,7 +414,7 @@
                 </div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar05.jpg" alt="">
@@ -429,7 +427,7 @@
                 </div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
-                    <blockquote class="animated" data-animation="fadeIn">
+                    <blockquote class="bg-white animated" data-animation="fadeIn">
                         <p>Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar04.jpg" alt="">
@@ -457,7 +455,7 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">How to find developer to your team?</a></h4>
+                    <h4><a href="blog-post-horizontal-dark.html">How to find developer to your team?</a></h4>
                     <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                 </div>
             </article>
@@ -470,7 +468,7 @@
                             <li>24 July, 2016</li>
                             <li>by Johnatan Doe</li>
                         </ul>
-                        <h4><a href="blog-post.html">Crazy idea about the most popular search engine</a></h4>
+                        <h4><a href="blog-post-horizontal-dark.html">Crazy idea about the most popular search engine</a></h4>
                         <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                     </div>
                 </div>
@@ -483,12 +481,12 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">Could Brexit trigger European stock crash?</a></h4>
+                    <h4><a href="blog-post-horizontal-dark.html">Could Brexit trigger European stock crash?</a></h4>
                     <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                 </div>
             </article>
             <div class="text-center mt-60">
-                <a href="blog.html" class="btn btn-primary">Go to my blog</a>
+                <a href="blog-horizontal-dark.html" class="btn btn-primary">Go to my blog</a>
             </div>
         </div>
 
@@ -498,7 +496,7 @@
     <section id="contact" class="section min-fullheight">
 
         <!-- BG Image -->
-        <div id="google-map" data-latitude="40.758895" data-longitude="-73.985131" data-style="dream" class="bg-map"></div>
+        <div id="google-map" data-latitude="40.758895" data-longitude="-73.985131" data-style="light" class="bg-map"></div>
 
         <div class="container container-custom">
             <div class="contact-box bg-primary dark animated" data-animation="fadeInDown" data-animation-delay="500">
@@ -554,9 +552,6 @@
 
 </div>
 <!-- Content / End -->
-
-<!-- Mobile Nav Toggle -->
-<a href="#" id="vertical-nav-toggle" class="nav-toggle" data-toggle="mobile-nav"><span><span></span></span></a>
 
 <!-- Contact Popup Controls -->
 <div class="contact-popup-ctrl">

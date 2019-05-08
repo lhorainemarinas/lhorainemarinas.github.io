@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
 
 <!-- Meta -->
@@ -22,6 +22,9 @@
 <!-- CSS Styles -->
 <link rel="stylesheet" href="assets/css/styles.css" />
 
+<!-- CSS Bootstrap RTL -->
+<link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
+
 <!-- CSS Theme -->
 <link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-blue.css" />
 
@@ -36,34 +39,32 @@
 <!-- Loader / End -->
 
 <!-- Header -->
-<header id="header" class="header-vertical dark">
+<header id="header" class="header-horizontal transparent">
 
-    <!-- Photo -->
-    <a href="index.html" class="photo">
-        <img src="assets/img/photos/developer_avatar.jpg" alt="">
-    </a> 
-
-    <!-- Navigation -->
-    <nav id="main-menu">
-        <ul class="nav nav-vertical">
-            <li><a href="#start"><i class="pe-7s-home"></i><span>Start</span></a></li>
-            <li><a href="#resume"><i class="pe-7s-ribbon"></i><span>Resume</span></a></li>
-            <li><a href="#portfolio"><i class="pe-7s-monitor"></i><span>Portfolio</span></a></li>
-            <li><a href="#clients"><i class="pe-7s-comment"></i><span>Clients</span></a></li>
-            <li><a href="#latest-posts"><i class="pe-7s-copy-file"></i><span>Latest Posts</span></a></li>
-            <li><a href="#contact"><i class="pe-7s-mail"></i><span>Contact</span></a></li>
-        </ul>
-        <span class="selector"></span>
-    </nav>
-
-    <!-- Bottom -->
-    <div class="bottom text-center">
-        <ul class="nav-icons nav-sm">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+    <div class="row">
+        <div class="col-md-2">
+            <!-- Photo -->
+            <a href="index-horizontal-dark-rtl.html" class="photo">
+                <img src="assets/img/photos/lawyer_avatar.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-8">
+            <!-- Navigation -->
+            <nav id="main-menu">
+                <ul class="nav nav-horizontal">
+                    <li><a href="#start">بداية</a></li>
+                    <li><a href="#resume">استئنف</a></li>
+                    <li><a href="#portfolio">محفظة</a></li>
+                    <li><a href="#clients">عملاء</a></li>
+                    <li><a href="#latest-posts">كل المشاركات</a></li>
+                    <li><a href="#contact">اتصال</a></li>
+                </ul>
+                <span class="selector"></span>
+            </nav>
+        </div>
     </div>
+    <!-- Mobile Nav Toggle -->
+    <a href="#" id="horizontal-nav-toggle" class="nav-toggle" data-toggle="mobile-nav"><span><span></span></span></a>
 
 </header>
 <!-- Header / End -->
@@ -75,12 +76,12 @@
     <section id="start" class="section fullheight dark bg-dark">
 
         <!-- BG Image -->
-        <div class="bg-image zooming"><img src="assets/img/photos/developer_bg01.jpg" alt=""></div>
+        <div class="bg-image zooming"><img src="assets/img/photos/lawyer_bg01.jpg" alt=""></div>
         
-        <div class="container container-custom v-center">
+        <div class="container container-custom v-center text-center">
             <a href="#" class="btn-play btn-lg mb-30" data-toggle="video-modal" data-target="#modalVideo" data-video="https://www.youtube.com/embed/uVju5--RqtY"></a>
-            <h1 class="text-lg mb-0"><em>Hi! I’m</em> Mark Kosowski</h1>
-            <p class="lead text-muted">Experienced Front-End Developer</p>
+            <h1 class="text-lg mb-0"><em>أهلا أنا</em> أحمد يحيى</h1>
+            <p class="lead text-muted">شهدت الجبهة نهاية المطورer</p>
         </div>
 
     </section>
@@ -89,14 +90,14 @@
     <section id="resume" class="section">
         
         <div class="container container-custom">
-            <p class="lead text-muted mb-80">Aliquam nec lacus sollicitudin, ornare arcu at, tempor dolor. Quisque dapibus libero nec turpis molestie auctor. Quisque dapibus nisl enim, consequat blandit purus porttitor elementum. Maecenas placerat dapibus ullamcorper.</p>
+            <p class="lead text-muted mb-80">أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً بخطوط. بـ حصدت التحالف استمرار بال. الأخذ سليمان، تلك قد, بها أي بالحرب الصعداء الحيلولة, ذلك دخول إعلان والفلبين مع. جيما الإتحاد ومن ان, الدمج والتي عل ذلك, بقيادة الفرنسية لها لم. بحشد أصقاع يتم أي, تاريخ الهجوم ولم كل. إذ علاقة استطاعوا المشتّتون انه.</p>
 
             <div class="row masonry long-spaces">
                 <div class="masonry-sizer col-sm-6 col-xs-12"></div>
                 <!-- Specialities -->
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <div class="resume-card">
-                        <h3 class="title">My Specialities</h3>
+                        <h3 class="title">بلدي تخصصات</h3>
                         <div class="row">
                             <div class="col-lg-6">
                                 <!-- Feature -->
@@ -136,7 +137,7 @@
                 <!-- Skills -->
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <div class="resume-card">
-                        <h3 class="title">Skills</h3>
+                        <h3 class="title">مهارات</h3>
                         <!-- Skill -->
                         <div class="skill">
                             <div class="progress">
@@ -170,7 +171,7 @@
                 <!-- Languages -->
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <div class="resume-card">
-                        <h3 class="title">Languages</h3>
+                        <h3 class="title">اللغات</h3>
                         <!-- Skill -->
                         <div class="skill">
                             <div class="progress">
@@ -197,7 +198,7 @@
                 <!-- Educatin & Jobs -->
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <div class="resume-card">
-                        <h3 class="title">Education &amp; Jobs</h3>
+                        <h3 class="title">التعليم وفرص العمل</h3>
                         <div class="timeline">
                             <!-- Event-->
                             <div class="timeline-event animated">
@@ -230,27 +231,27 @@
                 <!-- Hobbies -->
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <div class="resume-card">
-                        <h3 class="title">Hobbies &amp; Interests</h3>
+                        <h3 class="title">هوايات و اهتماماتs</h3>
                         <div class="row">
                             <div class="col-sm-4">
                                 <!-- Feature -->
                                 <div class="feature feature-1 text-center">
                                     <span class="icon icon-primary"><i class="pe-7s-bicycle"></i></span>
-                                    <h4>Sport</h4>
+                                    <h4>رياضة</h4>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!-- Feature -->
                                 <div class="feature feature-1 text-center">
                                     <span class="icon icon-primary"><i class="pe-7s-headphones"></i></span>
-                                    <h4>Music</h4>
+                                    <h4>موسيقى</h4>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!-- Feature -->
                                 <div class="feature feature-1 text-center">
                                     <span class="icon icon-primary"><i class="pe-7s-rocket"></i></span>
-                                    <h4>Travelling</h4>
+                                    <h4>السفر</h4>
                                 </div>
                             </div>
                         </div>
@@ -283,9 +284,9 @@
             <!-- Image Box -->
             <div class="mobileApps masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work01.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work01.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">Mountain View</h4>
                             <span class="text-muted">Mobile Apps</span>
                         </a>
@@ -295,9 +296,9 @@
             <!-- Image Box -->
             <div class="webdesign masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work02.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work02.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">On the Beach</h4>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -307,9 +308,9 @@
             <!-- Image Box -->
             <div class="socialMedia masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work03.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work03.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">Cast Away</h4>
                             <span class="text-muted">Social Media</span>
                         </a>
@@ -319,9 +320,9 @@
             <!-- Image Box -->
             <div class="webdesign masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work04.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work04.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">On the Desert</h4>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -331,9 +332,9 @@
             <!-- Image Box -->
             <div class="webdesign masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work05.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work05.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">Apple MacBook</h4>
                             <span class="text-muted">Webdesign</span>
                         </a>
@@ -343,9 +344,9 @@
             <!-- Image Box -->
             <div class="mobileApps masonry-item col-md-4 col-sm-6 col-xs-12">
                 <div class="image-box">
-                    <div class="image"><a href="project-example.html" data-toggle="ajax-modal"><img src="assets/img/works/work06.jpg" alt=""></a></div>
+                    <div class="image"><a href="project-example-rtl.html" data-toggle="ajax-modal"><img src="assets/img/works/work06.jpg" alt=""></a></div>
                     <div class="hover">
-                        <a href="project-example.html" data-toggle="ajax-modal">
+                        <a href="project-example-rtl.html" data-toggle="ajax-modal">
                             <h4 class="mb-0">The Tree</h4>
                             <span class="text-muted">Mobile Apps</span>
                         </a>
@@ -360,13 +361,13 @@
     <section id="clients" class="section bg-light">
 
         <div class="container container-custom">
-            <h3 class="text-center mb-80">What clients say?</h3>
+            <h3 class="text-center mb-80">ما عملاء أقول؟</h3>
             <div class="row masonry">
                 <div class="masonry-sizer col-sm-6 col-xs-12"></div>
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
+                        <p>أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً بخطوط. بـ حصدت التحالف استمرار بال.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar01.jpg" alt="">
                             <div class="content">
@@ -379,7 +380,7 @@
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
+                        <p>أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض.</p>
                         <footer>
                             <div class="content">
                                 <span class="name">Jerry Nowak</span>
@@ -391,7 +392,7 @@
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat.</p>
+                        <p>أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً بخطوط. بـ حصدت التحالف استمرار بال.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar02.jpg" alt="">
                             <div class="content">
@@ -404,7 +405,7 @@
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
+                        <p>أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar03.jpg" alt="">
                             <div class="content">
@@ -417,7 +418,7 @@
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
+                        <p>أفاق مهمّات واشتدّت بحق عل, وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً بخطوط. بـ حصدت التحالف استمرار بال.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar05.jpg" alt="">
                             <div class="content">
@@ -430,7 +431,7 @@
                 <div class="masonry-item col-sm-6 col-xs-12">
                     <!-- Blockquote -->
                     <blockquote class="animated" data-animation="fadeIn">
-                        <p>Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
+                        <p>لأخذ سليمان، تلك قد, بها أي بالحرب الصعداء الحيلولة, ذلك دخول إعلان والفلبين مع. جيما الإتحاد ومن ان, الدمج والتي عل ذلك, بقيادة الفرنسية لها لم. بحشد أصقاع يتم أي, تاريخ الهجوم ولم كل. إذ علاقة استطاعوا المشتّتون انه.</p>
                         <footer>
                             <img src="assets/img/avatars/avatar04.jpg" alt="">
                             <div class="content">
@@ -448,7 +449,7 @@
     <!-- Section - Latest Posts -->
     <section id="latest-posts" class="section">
         <div class="container container-custom">
-            <h3 class="text-center mb-80">Latest Posts</h3>
+            <h3 class="text-center mb-80">آخر المشاركات</h3>
             <!-- Post / Item -->
             <article class="post item">
                 <div class="post-image"><img src="assets/img/posts/post01.jpg" alt=""></div>
@@ -457,8 +458,8 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">How to find developer to your team?</a></h4>
-                    <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
+                    <h4><a href="blog-post-horizontal-dark-rtl.html">كيفية العثور على المطور ل فريقك ؟</a></h4>
+                    <p> وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً </p>
                 </div>
             </article>
             <!-- Post / Item -->
@@ -470,8 +471,8 @@
                             <li>24 July, 2016</li>
                             <li>by Johnatan Doe</li>
                         </ul>
-                        <h4><a href="blog-post.html">Crazy idea about the most popular search engine</a></h4>
-                        <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
+                        <h4><a href="blog-post-horizontal-dark-rtl.html">فكرة مجنونة حول محرك البحث الأكثر شعبية</a></h4>
+                        <p> وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً </p>
                     </div>
                 </div>
             </article>
@@ -483,12 +484,12 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">Could Brexit trigger European stock crash?</a></h4>
-                    <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
+                    <h4><a href="blog-post-horizontal-dark-rtl.html">يمكن أن يؤدي تحطم الأسهم الأوروبية ؟</a></h4>
+                    <p> وفي أي تجهيز بريطانيا-فرنسا, جدول ٠٨٠٤ أن يتم. مما الأرض وباستثناء بـ. عل أسر وقام أملاً </p>
                 </div>
             </article>
             <div class="text-center mt-60">
-                <a href="blog.html" class="btn btn-primary">Go to my blog</a>
+                <a href="blog-horizontal-dark-rtl.html" class="btn btn-primary">Go to my blog</a>
             </div>
         </div>
 
@@ -498,14 +499,14 @@
     <section id="contact" class="section min-fullheight">
 
         <!-- BG Image -->
-        <div id="google-map" data-latitude="40.758895" data-longitude="-73.985131" data-style="dream" class="bg-map"></div>
+        <div id="google-map" data-latitude="40.758895" data-longitude="-73.985131" data-style="paper" class="bg-map"></div>
 
         <div class="container container-custom">
             <div class="contact-box bg-primary dark animated" data-animation="fadeInDown" data-animation-delay="500">
                 <div class="contact-box-content">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="mb-50"><em>Don’t hesitate to</em> contact me!</h2>
+                            <h2 class="mb-50">لا تتردد في الاتصال بي !</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -535,7 +536,7 @@
                     <hr class="sep-line">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h5 class="mt-5">Check my social media!</h5>
+                            <h5 class="mt-5">التحقق من بلدي وسائل الاعلام الاجتماعية !</h5>
                         </div>
                         <div class="col-sm-6 text-right">
                             <ul class="nav-icons">
@@ -560,7 +561,7 @@
 
 <!-- Contact Popup Controls -->
 <div class="contact-popup-ctrl">
-    <a href="#" class="contact-popup-toggle" data-toggle="contact-popup"><span class="typing" data-text='["Have a question?","Write to me!"]'>Write to me!</span></a>
+    <a href="#" class="contact-popup-toggle" data-toggle="contact-popup"><span class="typing" data-text='["لدي سؤال؟","اكتب لي!"]'>اكتب لي!</span></a>
     <a href="#" class="contact-popup-close" data-toggle="contact-popup"><i class="ti-close"></i></a>
 </div>
 <!-- Contact Popup -->
@@ -570,33 +571,33 @@
             <form id="contact-form" class="validate-form">
                 <div class="head">
                     <span class="form-status">1/2</span>
-                    <h3>Write to me!</h3>
+                    <h3>اكتب لي!</h3>
                 </div>
                 <div class="steps">
                     <!-- Form Step -->
                     <div class="step active" data-step="1">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
+                                <input id="name" name="name" type="text" class="form-control" placeholder="اسمك" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input id="email" name="email" type="text" class="form-control" placeholder="Your e-mail" required>
+                                <input id="email" name="email" type="text" class="form-control" placeholder="بريدك الالكتروني" required>
                             </div>
                         </div>
                         <div class="bottom clearfix">
                             <nav class="controls">
-                                <a href="#" class="btn btn-white" data-target="form-next-step">Next step<i class="i-after ti-arrow-right"></i></a>
+                                <a href="#" class="btn btn-white" data-target="form-next-step">الخطوة التالية<i class="i-after ti-arrow-right"></i></a>
                             </nav>
                         </div>
                     </div>
                     <!-- Form Step -->
                     <div class="step" data-step="2">
-                        <textarea name="message" id="message" rows="3" class="form-control" placeholder="Tap here your message..." required></textarea>
+                        <textarea name="message" id="message" rows="3" class="form-control" placeholder="اضغط هنا رسالتك" required></textarea>
                         <div class="bottom clearfix">
-                            <div class="info"><span>from</span> <em id="sender"></em></div>
+                            <div class="info"><span>من عند</span> <em id="sender"></em></div>
                             <nav class="controls">
                                 <button class="btn btn-link" data-target="form-prev-step"><i class="i-after ti-angle-left"></i></button>
-                                <button type="submit" class="btn btn-white btn-submit"><span>Send a message! <i class="i-after ti-check"></i></span></button>
+                                <button type="submit" class="btn btn-white btn-submit"><span>ارسل رسالة! <i class="i-after ti-check"></i></span></button>
                             </nav>
                         </div>
                     </div>
@@ -605,7 +606,6 @@
         </div>
     </div>
 </div>
-
 <!-- Ajax Modal -->
 <div id="ajax-modal"></div>
 <!-- Ajax Close -->
@@ -616,9 +616,9 @@
 <!-- Modal / Video -->
 <div class="modal modal-video fade" id="modalVideo" role="dialog">
     <button class="close" data-dismiss="modal"><i class="ti-close"></i></button>
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <iframe height="500"></iframe>
+            <iframe height="350"></iframe>
         </div>
     </div>
 </div>

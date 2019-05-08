@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <!-- CSS Theme -->
-<link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-blue.css" />
+<link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-red.css" />
 
 </head>
 
@@ -36,12 +36,12 @@
 <!-- Loader / End -->
 
 <!-- Header -->
-<header id="header" class="header-vertical dark">
+<header id="header" class="header-vertical collapsed dark">
 
     <!-- Photo -->
-    <a href="index.html" class="photo">
-        <img src="assets/img/photos/developer_avatar.jpg" alt="">
-    </a> 
+    <a href="index-collapsed-dark.html" class="photo">
+        <img src="assets/img/photos/accountant_avatar.jpg" alt="">
+    </a>
 
     <!-- Navigation -->
     <nav id="main-menu">
@@ -56,14 +56,8 @@
         <span class="selector"></span>
     </nav>
 
-    <!-- Bottom -->
-    <div class="bottom text-center">
-        <ul class="nav-icons nav-sm">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-    </div>
+    <!-- Header Toggle -->
+    <a href="#" id="header-toggle" class="nav-toggle"><span><span></span></span></a>
 
 </header>
 <!-- Header / End -->
@@ -72,15 +66,12 @@
 <div id="content">
 
     <!-- Section - Start -->
-    <section id="start" class="section fullheight dark bg-dark">
-
-        <!-- BG Image -->
-        <div class="bg-image zooming"><img src="assets/img/photos/developer_bg01.jpg" alt=""></div>
+    <section id="start" class="section section-sm">
         
-        <div class="container container-custom v-center">
-            <a href="#" class="btn-play btn-lg mb-30" data-toggle="video-modal" data-target="#modalVideo" data-video="https://www.youtube.com/embed/uVju5--RqtY"></a>
-            <h1 class="text-lg mb-0"><em>Hi! I’m</em> Mark Kosowski</h1>
-            <p class="lead text-muted">Experienced Front-End Developer</p>
+        <div class="container container-custom mt-90 animated" data-animation="fadeIn" data-local-scroll>
+            <h1 class="text-lg mb-0"><em>Hi! I’m</em> Amy Wozniak</h1>
+            <p class="lead text-muted">Experienced Accountant from Warsaw, Poland.</p>
+            <a href="#" class="btn btn-primary btn-lg">Check my Resume</a><a href="#" class="btn btn-link btn-lg">My Works</a>
         </div>
 
     </section>
@@ -95,47 +86,41 @@
                 <div class="masonry-sizer col-sm-6 col-xs-12"></div>
                 <!-- Specialities -->
                 <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
+                    <div class="resume-card boxed">
                         <h3 class="title">My Specialities</h3>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-browser"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Web App</h4>
-                                    </div>
-                                </div>
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-phone"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Mobile Apps</h4>
-                                    </div>
-                                </div>
+                        <!-- Feature -->
+                        <div class="feature feature-2">
+                            <span class="icon icon-primary"><i class="pe-7s-browser"></i></span>
+                            <div class="feature-content">
+                                <h4>Web App</h4>
                             </div>
-                            <div class="col-lg-6">
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-monitor"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Webdesign</h4>
-                                    </div>
-                                </div>
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-chat"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Social Media</h4>
-                                    </div>
-                                </div>
+                        </div>
+                        <!-- Feature -->
+                        <div class="feature feature-2">
+                            <span class="icon icon-primary"><i class="pe-7s-phone"></i></span>
+                            <div class="feature-content">
+                                <h4>Mobile Apps</h4>
+                            </div>
+                        </div>
+                        <!-- Feature -->
+                        <div class="feature feature-2">
+                            <span class="icon icon-primary"><i class="pe-7s-monitor"></i></span>
+                            <div class="feature-content">
+                                <h4>Webdesign</h4>
+                            </div>
+                        </div>
+                        <!-- Feature -->
+                        <div class="feature feature-2">
+                            <span class="icon icon-primary"><i class="pe-7s-chat"></i></span>
+                            <div class="feature-content">
+                                <h4>Social Media</h4>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Skills -->
                 <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
+                    <div class="resume-card boxed">
                         <h3 class="title">Skills</h3>
                         <!-- Skill -->
                         <div class="skill">
@@ -169,7 +154,7 @@
                 </div>
                 <!-- Languages -->
                 <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
+                    <div class="resume-card boxed">
                         <h3 class="title">Languages</h3>
                         <!-- Skill -->
                         <div class="skill">
@@ -196,7 +181,7 @@
                 </div>
                 <!-- Educatin & Jobs -->
                 <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
+                    <div class="resume-card boxed">
                         <h3 class="title">Education &amp; Jobs</h3>
                         <div class="timeline">
                             <!-- Event-->
@@ -229,7 +214,7 @@
                 </div>
                 <!-- Hobbies -->
                 <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
+                    <div class="resume-card boxed">
                         <h3 class="title">Hobbies &amp; Interests</h3>
                         <div class="row">
                             <div class="col-sm-4">
@@ -357,7 +342,7 @@
     </section>
 
     <!-- Section - Clients -->
-    <section id="clients" class="section bg-light">
+    <section id="clients" class="section bg-primary dark">
 
         <div class="container container-custom">
             <h3 class="text-center mb-80">What clients say?</h3>
@@ -457,7 +442,7 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">How to find developer to your team?</a></h4>
+                    <h4><a href="blog-post-collapsed-dark.html">How to find developer to your team?</a></h4>
                     <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                 </div>
             </article>
@@ -470,7 +455,7 @@
                             <li>24 July, 2016</li>
                             <li>by Johnatan Doe</li>
                         </ul>
-                        <h4><a href="blog-post.html">Crazy idea about the most popular search engine</a></h4>
+                        <h4><a href="blog-post-collapsed-dark.html">Crazy idea about the most popular search engine</a></h4>
                         <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                     </div>
                 </div>
@@ -483,12 +468,12 @@
                         <li>24 July, 2016</li>
                         <li>by Johnatan Doe</li>
                     </ul>
-                    <h4><a href="blog-post.html">Could Brexit trigger European stock crash?</a></h4>
+                    <h4><a href="blog-post-collapsed-dark.html">Could Brexit trigger European stock crash?</a></h4>
                     <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
                 </div>
             </article>
             <div class="text-center mt-60">
-                <a href="blog.html" class="btn btn-primary">Go to my blog</a>
+                <a href="blog-collapsed-dark.html" class="btn btn-primary">Go to my blog</a>
             </div>
         </div>
 
@@ -612,16 +597,6 @@
 <a href="#" class="ajax-close" data-dismiss="ajax-modal"><i class="ti-close"></i></a>
 <!-- Ajax Loader -->
 <svg id="ajax-loader" class="loader" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="5" stroke-linecap="round" cx="32" cy="32" r="32"></circle></svg>
-
-<!-- Modal / Video -->
-<div class="modal modal-video fade" id="modalVideo" role="dialog">
-    <button class="close" data-dismiss="modal"><i class="ti-close"></i></button>
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <iframe height="500"></iframe>
-        </div>
-    </div>
-</div>
 
 <!-- JS Libraries -->
 <script src="assets/js/jquery-1.12.4.min.js"></script>
